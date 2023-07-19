@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* setting default Fonts */
+
+body {
+  font-family: sans-serif;
+  background: #afb9c5;
+}
+
+/* #container {
+    background: #afb9c5;
+    height: 100%;
+  } */
+
+/* content wrapper */
+
+#main {
+  width: 80%;
+  margin: 30px auto;
+  background: white;
+  height: 100%;
+  position: relative;
+  /* display: flex; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.053);
+  padding: 40px;
+  border-radius: 20px;
+  /* column-gap: 20px; */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin: 20px;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.image img {
+  width: 730px;
+  border-radius: 13px;
+  height: 500px;
+  object-fit: fill;
+}
+
+.measure {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background-color: rgb(227, 227, 227);
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  border-radius: 10px;
+  border: 8px double;
+}
+
+.ingredient h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ingr-lists,
+.ing-measures {
+  list-style: none;
+  font-size: 19px;
+  line-height: 2;
+}
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.instruction h3 {
+  font-size: 22px;
+}
+
+.instruction p {
+  line-height: 1.4;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}

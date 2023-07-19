@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <header class="">
+         <!-- Navigation Bar -->
+         <nav id="nav-bar">
+          <div class="logo">
+            <img class="brand-logo" src="./assests/images/list.png" alt="" />
+            <span>Recipe<br /><span>Book</span></span>
+          </div>
+          <div class="input-box">
+            <i class="fa fa-search"></i>
+            <input id="input" type="text" placeholder="Search your recipe" />
+          </div>
+          <button class="fav-btn" onclick="openFav()">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <div class="fav-counter">
+            <span><!-- This Section Manage By JS --></span>
+          </div>
+        </nav>
+      </header>
+      <!-- Main -->
+      <div id="main">
+        <!-- Favourite Section -->
+        <div class="fav-section close-fav">
+          <span id="close" onclick="closeFav()"><i class="fa-solid fa-rectangle-xmark"></i></span>
+          <h2>Favourite Meals</h2>
+          <div class="fav-box" id="box">
+            <!-- This Section Manage By JS -->
+          </div>
+        </div>
+
+        <!-- get Meals by Search -->
+        <div class="meal-search-box">
+          <!-- <h1>Search Result</h1> -->
+          <div id="allMeals">
+            <!-- This Section Manage By JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assests/js/script.js"></script>
+  </body>
+</html>
